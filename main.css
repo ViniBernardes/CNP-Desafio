@@ -1,0 +1,16 @@
+root{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+body{
+    color:red;
+    background-image: url(Amibiente\ de\ luz.jpeg);
+    background-repeat:repeat;
+    background-size:  1628px;
+}
+.section{
+    @media screen {
+        border-image: auto;
+        
+    }
+}
