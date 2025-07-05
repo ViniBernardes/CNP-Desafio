@@ -1,16 +1,110 @@
-root{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    color:red;
-    background-image: url(Amibiente\ de\ luz.jpeg);
-    background-repeat:repeat;
-    background-size:  1628px;
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('Amibiente de luz.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
-.section{
-    @media screen {
-        border-image: auto;
-        
-    }
+
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slide.active {
+  display: block;
+}
+
+
+.slide img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.info {
+  margin-top: 10px;
+}
+
+.info h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.info p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Botões de navegação */
+button.prev,
+button.next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Responsivo para telas pequenas */
+@media screen and (max-width: 450px) {
+  .slider {
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .info h2 {
+    font-size: 22px;
+  }
+
+  .info p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  button.prev,
+  button.next {
+    font-size: 18px;
+    padding: 8px;
+  }
 }

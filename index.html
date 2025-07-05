@@ -1,33 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criaturas Misticas</title>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criaturas Magicas</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <section>
-    <sub>Criaturas Neutra</sub>
-    <p></p>
-    <slot>
-    <img src="Pheonix.JPEG" alt=""><details></details>
-    <img src="Pelucio.JPEG" alt=""><details></details>
-    <img src="Testralio.JPEG" alt=""><details></details>
-    <img src="Agoureiro.JPEG" alt=""><details></details>
-    <img src="Acromantula.JPEG" alt=""><details></details>
-    </slot>
-    <link rel="stylesheet" href="main.css">
-</section>
+  <div class="slider">
+    <div class="slide active">
+      <img src="assets/img/Fawkes_002.webp" alt="Slide 1">
+      <div class="info">
+        <h2>Fenix</h2>
+        <p>A fênix é um grande pássaro escarlate do tamanho de um cisne com plumagem vermelha e dourada, um bico dourado, garras e olhos negros e uma cauda parecida com a do pavão. Suas penas escarlate brilham fracamente na escuridão, enquanto suas penas da cauda são quentes ao toque.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="assets/img/Acromantula.JPEG" alt="Slide 2">
+      <div class="info">
+        <h2>Acromantula</h2>
+        <p>Aranha gigantesca e inteligente, nativa da selva de Bornéu. Pode falar, mas é extremamente perigosa para os humanos.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="assets/img/Dragao.JPEG" alt="Slide 3">
+      <div class="info">
+        <h2>Dragao</h2>
+        <p>Criatura mágica enorme, alada e cuspindo fogo. Existem várias espécies, como o Rabo-Córneo Húngaro e o Meteoro Chinês.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/Hipogrifo.JPEG" alt="Slide 4">
+      <div class="info">
+        <h2>Hipogrifo</h2>
+        <p>Ser com cabeça de águia e corpo de cavalo. Exige respeito: cumprimente-o com uma reverência antes de se aproximar.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/Inferius.JPEG" alt="Slide 5">
+      <div class="info">
+        <h2>Inferius</h2>
+        <p>Cadáver reanimado por magia das trevas, usado por bruxos das trevas como soldados. Não sentem dor, frio ou medo.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <!-- ./assets/img/[nome_da_imagem.extensao] -->
+      <img src="assets/img/Niffler.JPEG" alt="Slide 6">
+      <div class="info">
+        <h2>Pelucio</h2>
+        <p>Criatura pequena e peluda com faro para objetos brilhantes. Muito usada por goblins para encontrar tesouros.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="assets/img/Testralio.JPEG" alt="Slide 7">
+      <div class="info">
+        <h2>Testralio</h2>
+        <p>Cavalos esqueléticos e alados que só podem ser vistos por quem testemunhou a morte. Apesar da aparência, são dóceis.</p>
+      </div>
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+
+  <script src="java.js"></script>
 </body>
-<footer>
-    <sub>Criaturas das Trevas</sub>
-    <p></p>
-    <slot>
-    <img src="Dragão.JPEG" alt=""><details></details>
-    <img src="Basilisco.JPEG" alt=""><details></details>
-    <img src="Dementador.JPEG" alt=""><details></details>
-    <img src="Mortalha Viva.JPEG" alt=""><details></details>
-    <img src="Inferius.JPEG" alt=""><details></details>
-</slot>
-</footer>
 </html>
